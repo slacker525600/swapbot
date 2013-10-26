@@ -1,4 +1,5 @@
-#import MySQLdb
+import MySQLdb
+from MySQLdb.constants import FIELD_TYPE
 
 import items
 import location_swaps
