@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>SwapBot</title>
+		<meta name="description" content="">
+
+		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Krona+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps' rel='stylesheet' type='text/css'>
+
+		<style type="text/css">
+
+			body {
+				margin: 0 10%;
+				background-image: url('img/mybg.png');
+				font-family: 'Raleway', sans-serif;
+			}
+
+			#header {
+				background-image: url('img/header.jpeg');
+				padding-bottom: 50px;
+			}
+
+			ul {
+				list-style: none;
+			}
+
+			nav ul {
+				border-top-style: solid;
+				border-bottom-style: solid;
+				border-width: 1px;
+				border-color: #000;
+				padding: 20px 0px;
+				margin-top: 80px;
+				list-style: none;
+				text-align: center;
+			}
+			nav li {
+				display: inline;
+				padding: 0px 10px;
+				font-family: 'Raleway', sans-serif;
+			}
+			nav a {
+				padding: 20px 25px;
+				text-decoration: none;
+				color: #000;
+				transition: 0.2s;
+			}
+			nav a:hover {
+				color: #FF4500;
+				background: #fff;
+				border-radius: 5px;	
+				box-shadow: 0px 1px 0px rgba(0,0,0,0.2),
+				 0px 1px 3px rgba(0,0,0,0.2);
+			}
+
+			#header {
+				background-image: url('img/header.jpeg');
+				padding-bottom: 50px;
+			}
+
+			h1 {
+				text-align: center;
+				font-family: 'Oleo Script Swash Caps', sans-serif;
+				font-size: 160px;
+				color: #FF4500;
+				margin: 0 0 0 0;
+			}
+
+			h2 {
+				text-align: center;
+				font-family: 'Raleway', sans-serif;
+				font-size: 30px;
+				margin-top: 100px;
+			}
+
+			h3 {
+				text-align: center;
+				font-family: 'Raleway', sans-serif;
+				font-size: 30px;
+			}
+
+			#request_form {
+				width: 320px;
+				margin: auto;
+				text-align: center;			
+			}
+
+			#name, #use, #items {
+				width: 300px;
+				height: 200px;
+				margin: 10px;
+				border: gray 1px solid;
+				border-radius: 3px;
+				font-size: 14px;
+			}
+
+			#name {
+				height: 22px;
+			}
+
+			input {
+				margin: 10px;
+			}
+
+			.button {
+				text-align: center;
+				font-family: 'Raleway', Helvetica, sans-serif;
+				font-size: 20px;
+				color: #fff;
+				text-shadow: ;
+				margin: auto;
+		/*		margin-top: 60px;
+				margin-bottom: 60px;
+				margin-left: 28%;*/ /*gotta center it the right way*/
+/*				padding: 3px 3px;*/
+
+				background: #FF4500;
+				border-radius: 10px;
+
+				border-style: solid;
+				border-width: 1px;
+				border-color: #D35A48;
+
+				width: 180px;
+
+				border-bottom-style: solid;
+				border-bottom-width: 3px;
+				border-bottom-color: #B13A32;
+
+				box-shadow: 0px 1px 0px rgba(0,0,0,0.2),
+				 0px 1px 3px rgba(0,0,0,0.2),
+	             0px 8px 13px rgba(0,0,0,0.1),
+	             0px 18px 23px rgba(0,0,0,0.1);
+
+			}
+
+			footer {
+				text-align: center;
+				padding-bottom: 80px;
+				font-family: 'Raleway', sans-serif;
+				color: #B3B3B3;
+				margin-top: 80px;
+			}
+			footer a {
+				text-decoration: none;
+				color: #FF4500;
+			}
+
+
+		</style>
+
+	</head>
+
+	<body>
+		<div id="wrapper">
+		
+			<div id="header">
+<!-- 				<nav>
+					<ul>
+						<li><a href="#why">Why?</a></li>
+						<li><a href="#what">What?</a></li>
+						<li><a href="#">Donate</a></li>
+					</ul>
+				</nav>	 -->
+          <h1>SwapBot</h1>      
+			</div>
+
+			<div id ="request_form">
+				<textarea type="text" name="name" id="name">Recipient name.
+				</textarea>
+
+				<br>
+				needs 
+				<br>
+
+				<div id ="items">
+					<input type="checkbox" name="item" value="blouse"> Blouse
+					<input type="checkbox" name="item" value="boots"> Boots
+					<input type="checkbox" name="item" value="coat"> Coat
+					<input type="checkbox" name="item" value="dress"> Dress
+					<input type="checkbox" name="item" value="jacket"> Jacket
+					<input type="checkbox" name="item" value="jeans"> Jeans
+					<input type="checkbox" name="item" value="handbag"> Handbag
+					<input type="checkbox" name="item" value="hat"> Hat
+					<input type="checkbox" name="item" value="overcoat"> Overcoat
+					<input type="checkbox" name="item" value="pants"> Pants
+					<input type="checkbox" name="item" value="raincoat"> Raincoat
+					<input type="checkbox" name="item" value="shirt"> Shirt
+					<input type="checkbox" name="item" value="skirt"> Skirt
+					<input type="checkbox" name="item" value="shoes"> Shoes
+					<input type="checkbox" name="item" value="slacks"> Slacks
+					<input type="checkbox" name="item" value="suit"> Suit
+					<input type="checkbox" name="item" value="sweater"> Sweater
+				</div>
+
+				<br>
+				for 
+				<br>
+
+				<textarea type="text" name="name" id="use">Please specify how the item will be used. For example: Upcoming intervew. Networking event.
+				</textarea>
+
+				<div class="button">
+					<p>Request</p>
+				</div>
+
+			</div>
+
+			<footer>
+				Have a nice day.  &copy;2013 <a href="http://swapbot.co">Swapbot</a>
+			</footer>
+
+		</div>
+	</body>
+
+</html>
