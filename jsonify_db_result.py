@@ -1,6 +1,6 @@
 import json
 
-def proc(r)
+def proc(r):
   rResult = r.fetch_row()
   arResults = []
   while len(rResult) > 0:

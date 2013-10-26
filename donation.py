@@ -1,4 +1,4 @@
-import 
+import MySQLdb
 # what does a donation need to do?
 # new donation, add items, user date 
 
@@ -11,16 +11,18 @@ def insert_donation(db, dJS):
  
   rResult = db.query('select id from person where email = "' + dJS.get('user_email') + '";')
   rRow = rResult.fetch_row()
+  nID = -1
   if len(rRow) != 0:
-    rRow.val() # this is the user id to use for insert 
+    nID = rRow[0][0] # this is the user id to use for insert 
   else: 
     rResult = db.query('select max(id) + 1 from person')
     rRow = rResult.fetch_row()
+    nID = rRow[0][0]
 
     sQuery = 'insert into person (id, name, phone, email, password, loc_id, is_activated) values (' 
-    sQuery += str(rRow.val) 
+    sQuery += str(nID) 
     sQuery += ', "annon'
-    sQuery += str(rRow.val)
+    sQuery += str(niD)
     sQuery += '" , NULL ,' 
     sQuery += str(dJS.get('user_email')) 
     sQuery += ',"abc123" , ' 
