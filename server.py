@@ -17,7 +17,7 @@ class Proxy(CGIHTTPServer.CGIHTTPRequestHandler):
       handler = json_handler() 
       self.wfile.write( handler.handle_json(self.path) )
     else:
-      fFileToServe = open(self.path[1:] ,'r') #urllib removed front / urllib 2 gives it thus starting at 1
+      fFileToServe = open('html/' + self.path[1:] ,'r') #urllib removed front / urllib 2 gives it thus starting at 1
       self.copyfile(fFileToServe, self.wfile)
       fFileToServe.close()
     return
