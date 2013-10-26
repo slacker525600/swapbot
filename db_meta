@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Oct 25, 2013 at 11:46 PM
+-- Generation Time: Oct 25, 2013 at 11:54 PM
 -- Server version: 5.5.32
 -- PHP Version: 5.4.20
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `test`
+-- Database: `swapbot`
 --
 
 -- --------------------------------------------------------
@@ -146,6 +146,7 @@ CREATE TABLE IF NOT EXISTS `request` (
   `item_id` int(11) NOT NULL,
   `size` varchar(8) DEFAULT NULL,
   `recipient_id` int(11) NOT NULL,
+  `state` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `item_id` (`item_id`,`recipient_id`),
   KEY `recipient_id` (`recipient_id`),
@@ -199,8 +200,8 @@ ALTER TABLE `recipient`
 -- Constraints for table `request`
 --
 ALTER TABLE `request`
-  ADD CONSTRAINT `request_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `person` (`id`),
-  ADD CONSTRAINT `request_ibfk_1` FOREIGN KEY (`item_id`) REFERENCES `itemtype` (`id`);
+  ADD CONSTRAINT `request_ibfk_1` FOREIGN KEY (`item_id`) REFERENCES `itemtype` (`id`),
+  ADD CONSTRAINT `request_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `person` (`id`);
 
 --
 -- Constraints for table `swap`
