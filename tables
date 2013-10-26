@@ -6,7 +6,21 @@ person
  middlemen
 
 locations
+ location_id
+ geo_loc_lat
+ geo_loc_long
+ street_addr
+ 
+location_hours
+ loc_id
+ hours_id
 
+hours
+ open_hour 
+ close_hour
+ day_of_week
+ hours_id
+ 
 items
  unique id
  type
