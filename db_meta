@@ -1,0 +1,167 @@
+-- phpMyAdmin SQL Dump
+-- version 4.0.8
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost:3306
+-- Generation Time: Oct 25, 2013 at 11:27 PM
+-- Server version: 5.5.32
+-- PHP Version: 5.4.20
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `test`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `donation`
+--
+
+CREATE TABLE IF NOT EXISTS `donation` (
+  `id` int(11) NOT NULL,
+  `item_id` int(11) NOT NULL,
+  `size` varchar(8) DEFAULT NULL,
+  `donor_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `item_id` (`item_id`,`donor_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `donor`
+--
+
+CREATE TABLE IF NOT EXISTS `donor` (
+  `id` int(11) NOT NULL,
+  KEY `id` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `itemtype`
+--
+
+CREATE TABLE IF NOT EXISTS `itemtype` (
+  `id` int(11) NOT NULL,
+  `item` varchar(64) NOT NULL,
+  `mwc` varchar(24) NOT NULL,
+  `imagePath` varchar(512) NOT NULL,
+  `estimatedPrice` decimal(16,0) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `location`
+--
+
+CREATE TABLE IF NOT EXISTS `location` (
+  `id` int(11) NOT NULL,
+  `lat` varchar(64) NOT NULL,
+  `long` varchar(64) NOT NULL,
+  `street_addr` varchar(1024) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `middleman`
+--
+
+CREATE TABLE IF NOT EXISTS `middleman` (
+  `id` int(11) NOT NULL,
+  KEY `id` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `open_hors`
+--
+
+CREATE TABLE IF NOT EXISTS `open_hors` (
+  `loc_id` int(11) NOT NULL,
+  `open_hour` time NOT NULL,
+  `close_hour` time NOT NULL,
+  `day_of_week` varchar(16) NOT NULL,
+  KEY `loc_id` (`loc_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `person`
+--
+
+CREATE TABLE IF NOT EXISTS `person` (
+  `id` int(11) NOT NULL,
+  `name` varchar(64) NOT NULL,
+  `phone` varchar(11) DEFAULT NULL,
+  `email` varchar(128) NOT NULL,
+  `pasword` varchar(16) NOT NULL,
+  `loc_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `loc_id` (`loc_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `recipient`
+--
+
+CREATE TABLE IF NOT EXISTS `recipient` (
+  `id` int(11) NOT NULL,
+  `middleManID` int(11) DEFAULT NULL,
+  KEY `id` (`id`,`middleManID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `request`
+--
+
+CREATE TABLE IF NOT EXISTS `request` (
+  `id` int(11) NOT NULL,
+  `item_id` int(11) NOT NULL,
+  `size` varchar(8) DEFAULT NULL,
+  `recipient_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `item_id` (`item_id`,`recipient_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `swap`
+--
+
+CREATE TABLE IF NOT EXISTS `swap` (
+  `id` int(11) NOT NULL,
+  `don_id` int(11) NOT NULL,
+  `req_id` int(11) NOT NULL,
+  `create_time` datetime DEFAULT NULL,
+  `close_time` datetime DEFAULT NULL,
+  `sch_time` datetime DEFAULT NULL,
+  `state` varchar(8) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `don_id` (`don_id`,`req_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
