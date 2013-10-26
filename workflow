@@ -1,3 +1,27 @@
+
+
+homepage. statically served. 
+ javascript to populate ... what javascript framework are we using?
+ cart of donations
+ onclick show options, size mens womens, 
+ pull names / requests for populating bottom section
+complete page
+ javascript locate based on zipcode. 
+ 
+
+
+what do we need to populate in the database. 
+ locations of salvation army stores.  
+  
+
+
+
+
+
+
+
+#notes from discussion
+
 why donate here?
 
 
@@ -28,7 +52,7 @@ issues
  
 
 
-
+who is the audience
 young people: exchange 
 maturing people getting rid of clothes 
 

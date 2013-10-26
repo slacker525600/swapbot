@@ -1,10 +1,19 @@
-2 hours progress on donation aspect
-
-main page 
+concrete tasks. 
+ list of locations grab from internet, get as csv to upload to db. 
+ design database tables / queries for each action. 
+ javascript for populating the page
+ page layouts css styling
  
+
+main page design element
  donation requests at the bottom of the page, populated after click
   donate to fulfill
     test cases, looking for size, even if you arent a match can you help 
+homepage. statically served. 
+ javascript to populate ... what javascript framework are we using? 
+ cart of donations
+ onclick show options, size mens womens,
+ pull names / requests for populating bottom section
 
 sms requests. 
   ebt pin verify poverty?
@@ -21,9 +30,14 @@ donate form
  item description
  day of donation (send reminder email night before? beginning of day.)
  location of donation (sets hours available based on this)
+ javascript locate based on zipcode.
 
  
+ 
 
+
+what do we need to populate in the database.
+ locations of salvation army stores.
 
 worker at reception end 
  yes or no matches description 
