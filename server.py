@@ -2,13 +2,19 @@ import SocketServer
 import CGIHTTPServer 
 import urllib2
 
+#probably want to switch this to more advanced server, 
+#something that handles sessions for us, 
+#flask http://flask.pocoo.org/ 
+#or beaker http://beaker.readthedocs.org/en/latest/#using
+#or django https://www.djangoproject.com/
+
 import shutil
 import datetime
 
 from json_handler import json_handler
 
 PORT = 8080
-
+#currently very basic plumbing
 class Proxy(CGIHTTPServer.CGIHTTPRequestHandler):
   def do_GET(self):
     #think I just need this below
