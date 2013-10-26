@@ -1,0 +1,34 @@
+2 hours progress on donation aspect
+
+main page 
+ 
+ donation requests at the bottom of the page, populated after click
+  donate to fulfill
+    test cases, looking for size, even if you arent a match can you help 
+
+sms requests. 
+  ebt pin verify poverty?
+  phone # 
+  name 
+  item desired   
+  
+
+recipient
+  needs to opt in to a middleman / location. 
+  middleman needs to manage their list of 
+
+donate form 
+ item description
+ day of donation (send reminder email night before? beginning of day.)
+ location of donation (sets hours available based on this)
+
+ 
+
+
+worker at reception end 
+ yes or no matches description 
+  no goes to group description goes to salvation army
+  yes goes to person who is looking for a specific item
+
+
+
