@@ -3,8 +3,8 @@ import MySQLdb
 # new donation, add items, user date 
 
 def insert_donation(db, dJS):
-  {user_email, locationid, dropoffdate, itemids:{ {itemtypeid, qty, size} ,... }}
-  dJSONDonation # needs to have, blah blah blah 
+  #{user_email, locationid, dropoffdate, itemids:{ {itemtypeid, qty, size} ,... }}
+  #dJSONDonation # needs to have, blah blah blah 
   sUserEmail = dJS.get('user_email')
   if sUserEmail == None:
     sUserEmail = 'default@gmail.com'
@@ -44,5 +44,7 @@ def insert_donation(db, dJS):
       sInsertItemQuery += rRow.val() + '", "open");'     
       db.query(sInsertItemQuery)
       nQty += 1
-    
+  # items are in the donation table. 
+  # ... location match? 
+  
   return ''

@@ -1,3 +1,10 @@
+page by page json requests and input
+ homepage 
+  calls items fetches list 
+  map page 
+    receives donations, 
+    pulls locations, and their times. 
+
 
 building classes for json requests. 
   location
