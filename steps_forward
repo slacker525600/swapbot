@@ -1,9 +1,21 @@
 concrete tasks. 
- list of locations grab from internet, get as csv to upload to db. 
- design database tables / queries for each action. 
- javascript for populating the page
- page layouts css styling
+ most of the site framing page list
+   how it works
+   signup / login
+   location page, to show swaps that are set up and awaiting delivery
+   select location page after setting up donation items
+   enter requests 
+   
+ javascript for populating the page ... as well as cart js .. map js ... 
+ python or php to deal with validation and db -> json requests
+ page layouts css styling finalizing
  
+
+completed tasks
+  main layout for main page
+  collected information for item types and locations 
+  database design. 
+  
 
 main page design element
  donation requests at the bottom of the page, populated after click
