@@ -1,9 +1,19 @@
 person
  recipients
+  recip_id
+  ebt pin verify poverty?
+  phone # 
+  name 
+  item desired   
+  middleman_id # if = own id no middleman
 
  donors
-
+  donor_id
+  
  middlemen
+  location_id
+  donor_id
+  recipient_id
 
 locations
  location_id
@@ -25,6 +35,8 @@ items
  unique id
  type
  size
- 
+ donator_id
+ recipient_id
+
 item_type
  populate this from salvation army list, 
