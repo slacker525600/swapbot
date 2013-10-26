@@ -1,7 +1,7 @@
 person
  recipients
   recip_id
-  ebt pin verify poverty?
+  //ebt pin verify poverty?
   phone # 
   name 
   item desired   
@@ -25,11 +25,8 @@ locations
  geo_loc_long
  street_addr
  
-location_hours
- loc_id
- hours_id
-
 hours
+ loc_id
  open_hour 
  close_hour
  day_of_week
