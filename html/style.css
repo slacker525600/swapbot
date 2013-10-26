@@ -109,11 +109,17 @@ nav a:hover {
 .button a {
 	text-decoration: none;
 	color: #fff;
-	text-transform: uppercase;
 }
 .button:hover {
 	
 	border-color: #F2383E;	
+}
+#register {
+	font-size: 14px;
+	width: 80px;
+	margin: 0 0;
+	padding: 0 0;
+	float:right;
 }
 
 
@@ -159,16 +165,20 @@ nav a:hover {
 
 
 
+
 .item {
 	padding: 30px;
-	border-style: solid;
+	border-top-style: solid;
 	border-width: 1px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
 
 #where {
-	margin-top: 50px;
+	margin-top: 150px;
 
 }
 
@@ -176,9 +186,22 @@ nav a:hover {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: center;
-	height: 70%;
-	width: 70%;
+
+	border-style: solid;
+	border-width: 12px;
+	border-color: #FF4500;
+	border-radius: 10px;
+
+	box-shadow: 0px 1px 0px rgba(0,0,0,0.2),
+	 0px 1px 3px rgba(0,0,0,0.2),
+     0px 8px 13px rgba(0,0,0,0.1),
+     0px 18px 23px rgba(0,0,0,0.1);
+}
+
+#hours {
+	background: #F2E9B3;
+	margin-top: 60px;
+	padding: 10px;
 }
 
 
