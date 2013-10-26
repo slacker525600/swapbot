@@ -216,3 +216,5 @@ ALTER TABLE `swap`
 
 +ALTER TABLE  `donation` ADD  `state` VARCHAR( 16 ) NOT NULL ;
 +ALTER TABLE  `request` ADD  `state` VARCHAR( 16 ) NOT NULL ;
++ALTER TABLE `person` ADD UNIQUE (`email`);
++ALTER TABLE `donation` CHANGE `id` `id` INT( 11 ) NOT NULL AUTO_INCREMENT ;
