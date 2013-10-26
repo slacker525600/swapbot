@@ -35,7 +35,7 @@ items
  unique id
  type
  size
- donator_id
+ donor_id
  recipient_id
 
 item_type
