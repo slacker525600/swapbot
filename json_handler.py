@@ -5,7 +5,8 @@ import items
 import location_swaps
 import locations
 import users
-
+import donation
+import json
 
 class json_handler():
   #perform db query / validation here 
@@ -27,9 +28,15 @@ class json_handler():
     elif 'user_info' in path:
       #user page? show donations that have been matched and received and distributed, current status of all
       return users.fetch(db, path)
-    elif '?' == Null:
+    elif 'insert_donation' in path:
+      dJSON = json.load(path[path.find('json='):]
+      donation.insert_donation(db, dJSON)
+      return ''
       #what other cases do we need to handle?
-      return Null
+    elif 'insert_request' in path:
+      dJSON = json.load(path[path.find('json='):])
+      request.insert_request(db, dJSON)
+      return ''
     return "hello world"
     
     return 

@@ -205,6 +205,10 @@ nav a:hover {
 }
 
 
+#thanks-button {
+	margin-top: 100px;
+}
+
 
 
 
@@ -213,7 +217,7 @@ footer {
 	padding-bottom: 70px;
 	font-family: 'Raleway', sans-serif;
 	color: #B3B3B3;
-	margin-top: 180px;
+	margin-top: 160px;
 }
 footer a {
 	text-decoration: none;
