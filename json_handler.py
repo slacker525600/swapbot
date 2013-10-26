@@ -15,6 +15,8 @@ class json_handler():
                        passwd="swappass", # your password
                        db="swapbot",
                        conv=my_conv) # name of the data base    #could handle db connection here as opposed to opening it in each subclass.
+    #passwords in code not a good idea:
+    #db=_mysql.connect(read_default_file="~/.my.cnf") but whatever.
     if 'items' in path:
       return items.fetch(db)
     elif 'location_swaps' in path:
