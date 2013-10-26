@@ -15,6 +15,10 @@ person
   donor_id
   recipient_id
 
+desired_item
+ recipient_id
+ item_id
+
 locations
  location_id
  geo_loc_lat
@@ -31,11 +35,21 @@ hours
  day_of_week
  hours_id
  
-items
+donation
  unique id
- type
+ type_id
  size
  donor_id
+
+swap_item
+ donor_id
+ recipient_id
+ date
+
+request
+ unique id
+ type_id
+ size
  recipient_id
 
 item_type
