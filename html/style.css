@@ -110,8 +110,7 @@ nav a:hover {
 	text-decoration: none;
 	color: #fff;
 }
-.button:hover {
-	
+.button:active {
 	border-color: #F2383E;	
 }
 #register {
