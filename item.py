@@ -16,7 +16,7 @@ class item(object):
     self.estimatedPrice = dJSONDict.get('estimatedPrice')
     return self
   
- item = json.load(string param)
+  #item = json.load(string param)
 
   
 def fetch(db):
