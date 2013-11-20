@@ -113,23 +113,18 @@ nav a:hover {
 .button:active {
 	border-color: #F2383E;	
 }
-#register {
-	font-size: 14px;
-	width: 80px;
-	margin: 0 0;
-	padding: 0 0;
-	float:right;
-}
 
 
 
 
 #grid_selector {
 	padding-top: 10px;
+
 }
 
 #grid_selector ul {
 	text-align: center;
+	padding-left: 0; /*why there was 40px padding there without zeroing idk*/
 }
 
 #grid_selector a {
@@ -139,6 +134,7 @@ nav a:hover {
 #grid_selector li {
 	display: inline-block;
 	padding: 15px;
+
 }
 
 .thumb {
