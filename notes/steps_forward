@@ -1,3 +1,54 @@
+minimum viable product. 
+
+talking about middleman 
+  not in bad enough shape for social worker doesnt mean good enough shape that they dont need help
+  a feature to add 
+
+hosting. 
+matchmaking process?
+priority 
+  trust middleman to set priority properly.
+  greedy algorithm, give to matching priority by date of request. 
+need to figure out the location awareness element. 
+  is the matching going on based on ... 
+  ... so ... you say ... 
+  middleman to middle man transfers?
+  .. donator has an item, .. 
+    give them the locations that need that. 
+    automatically sort locations based on requests that match with what is about to be donated. 
+    if they have a cart, this is where a greedy algorithm may be helpful. 
+    on map show different pin color depending on matches
+focus on minimum viable product. 
+  small set of social workers. 
+  need working site, ... 
+    enter requests, 
+    enter donations, 
+  map features arent important 
+  matching isnt important. 
+  pie chart of request types... or some graphic way of saying what has the most demand. 
+  want to have some way of seeing the requests, 
+    is this minimum viable?
+map of all locations vs map of match to 
+there are no matches is the primary route, so just pass list of all locations. 
+add feature for middleman to middle man item passing. 
+  matching the need 
+
+
+do we have ids, goal is not to be anon, so ... dont allow anonymous dropoffs. 
+  facebook login (social)
+  vs email. 
+  both confirmation email from recipient to email
+  neither get the hell out, we dont care. 
+  either has dashboard to check at a later date.
+  if has email send email with check dashboard. .. 
+ashish and I will work on the backend
+andrew will continue to work on styles, (ashish suggested bootstrap for themes)
+james, will organize connections ... 
+
+
+
+
+
 page by page json requests and input
  homepage 
   calls items fetches list 
