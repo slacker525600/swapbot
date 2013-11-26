@@ -3,8 +3,9 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>SwapBot</title>
-		<meta name="description" content="">
+		<title>SwapBot - better clothing donation</title>
+		<meta name="description" content="Donate to real people.">
+		<meta name="author" content="team SwapBot">
 
 		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Krona+One' rel='stylesheet' type='text/css'>
@@ -16,50 +17,51 @@
 
 	<body>
 		<div id="wrapper">
-		
+			
+			<nav>
+				<ul>
+					<li><a href="http://www.youtube.com/watch?v=pZznF3NBRDI">&middot; Why &middot;</a></li>
+					<li><a href="#what">&middot; What &middot;</a></li>
+					<li><a href="#grid_selector" class="smoothScroll">&middot; Get Started &middot;</a></li>
+					<li><a href="sign_up.html">&middot; Register &middot;</a></li>
+				</ul>
+			</nav>
+
 			<div id="header">
 				<h1>SwapBot</h1>
 				<h2>Donate to real people</h2>	
 			</div>
-
-			<nav>
-				<ul>
-					<li><a href="#why">Why?</a></li>
-					<li><a href="#what">What?</a></li>
-					<li><a href="#">Donate</a></li>
-				</ul>
-			</nav>	
-
+	
 
 			<div class="button">
-				<p><a href="#grid_selector">Donate</a></p>
+				<p><a href="#grid_selector" class="smoothScroll">Whatcha Got? &darr;</a></p>
 
-				<!--arrow down-->
+				<!--arrow down, replace with graphic &darr; &#9660; &#9662;-->
 			</div>
 
 			
 
 			<div id="grid_selector">
 
-				<h3>What do you have today?</h3>
+				<h3>Show us!</h3>
 
 				<ul>
-					<li class="thumb"><a href="#"><img src="icon1.png" alt=""></a><span class="text">Jacket</span></li>
-					<li class="thumb"><a href="#"><img src="icon1.png" alt=""></a><span class="text">Shirt</span></li>
-					<li class="thumb"><a href="#"><img src="icon1.png" alt=""></a><span class="text">Shoes</span></li>
-					<li class="thumb"><a href="#"><img src="icon1.png" alt=""></a><span class="text">Shorts</span></li>
+					<li class="thumb"><a href="#"><img src="icon1.png" alt=""><span class="text">Jacket</span></a></li>
+					<li class="thumb"><a href="#"><img src="icon1.png" alt=""><span class="text">Shirt</span></a></li>
+					<li class="thumb"><a href="#"><img src="icon1.png" alt=""><span class="text">Shoes</span></a></li>
+					<li class="thumb"><a href="#"><img src="icon1.png" alt=""><span class="text">Shorts</span></a></li>
 				</ul>
 				<ul>
-					<li><a href="#"><img src="icon1.png" alt=""></a></li>
-					<li><a href="#"><img src="icon1.png" alt=""></a></li>
-					<li><a href="#"><img src="icon1.png" alt=""></a></li>
-					<li><a href="#"><img src="icon1.png" alt=""></a></li>
+					<li class="thumb"><a href="#"><img src="icon1.png" alt=""><span class="text">Slacks</span></a></li>
+					<li class="thumb"><a href="#"><img src="icon1.png" alt=""><span class="text">Suit</span></a></li>
+					<li class="thumb"><a href="#"><img src="icon1.png" alt=""><span class="text">Sweater</span></a></li>
+					<li class="thumb"><a href="#"><img src="icon1.png" alt=""><span class="text">Blouse</span></a></li>
 				</ul>
 				<ul>					
-					<li><a href="#"><img src="icon1.png" alt=""></a></li>
-					<li><a href="#"><img src="icon1.png" alt=""></a></li>
-					<li><a href="#"><img src="icon1.png" alt=""></a></li>
-					<li><a href="#"><img src="icon1.png" alt=""></a></li>
+					<li class="thumb"><a href="#"><img src="icon1.png" alt=""><span class="text">Boots</span></a></li>
+					<li class="thumb"><a href="#"><img src="icon1.png" alt=""><span class="text">Dress</span></a></li>
+					<li class="thumb"><a href="#"><img src="icon1.png" alt=""><span class="text">Hat</span></a></li>
+					<li class="thumb"><a href="#"><img src="icon1.png" alt=""><span class="text">Jeans</span></a></li>
 				</ul>
 
 			</div>
@@ -84,28 +86,58 @@
 			</div>
 
 		
-			<div id="people">
+			<!--<div id="people">
 				<ul>
 					<li>Person</li>
 					<li>Person</li>
 					<li>Person</li>
 				</ul>
 
+			</div>-->
+
+
+			<div class="button">
+				<p><a href="#where" class="smoothScroll">Next &darr;</a></p>
+				<!--arrow down-->
 			</div>
+
 			
 
 			<div id="where">
-				<h3>Please drop off your items here:</h3>
+				<h3>So where do you want to drop it off?</h3>
+				<a href="http://maps.google.com"><img id="mapmock" src="img/map.png" width="70%" height="70%"></a>
+
+				<!--research HTML5 geolocation API and Google service-->
+			</div>
+
+			<!--<div id="hours">
+				<h4>Hours</h4>
+
+			</div>-->
+
+
+			<div class="button" id="thanks-button">
+				<p><a href="thanks.html">Let's Do It</a></p>
 
 			</div>
-			
 
 
 			<footer>
-				Have a nice day.  &copy;2013 <a href="http://swapbot.co">Swapbot</a>
+				<a href="http://twitter.com/"><img src="img/icons/twitter.png"></a>
+				<a href="http://facebook.com/"><img src="img/icons/facebook.png"></a>
+				<p>Have a nice day! <a href="http://swapbot.co">SwapBot&trade;</a></p>
+				<p>built at Lincoln Labs</p>
 			</footer>
 
 		</div>
+
+
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript" ></script>
+		<script src="javascript/smoothscroll.js" type="text/javascript"></script>
+	
+
+
 	</body>
 
 </html>
