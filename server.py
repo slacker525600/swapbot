@@ -18,7 +18,7 @@ PORT = 8080
 class Proxy(CGIHTTPServer.CGIHTTPRequestHandler):
   def do_GET(self):
     #think I just need this below
-    if 'json' in self.path:
+    if '.json' in self.path:
       #handle json request here 
       handler = json_handler() 
       self.wfile.write( handler.handle_json(self.path) )
