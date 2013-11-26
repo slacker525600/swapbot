@@ -1,3 +1,4 @@
+
 class person(models.Model):
   id = models.IntegerField(null=False,default=val)
   name = models.CharField(max_length=L,null=False,default=val)
