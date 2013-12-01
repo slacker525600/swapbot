@@ -1,3 +1,4 @@
+
 class person(models.Model):
   id = models.IntegerField(null=False,default=val)
   name = models.CharField(max_length=L,null=False,default=val)
@@ -17,8 +18,8 @@ class donation(models.Model):
 class donor(models.Model):
   #was trying to figure out djano subclass vs foreign key for 
   id = models.ForeignKey(Person)
-  #forget what point of donor id_2 was... 
-  #id_2 = models.null=True,default=val)
+  forget what point of donor id_2 was... 
+  id_2 = models.null=True,default=val)
 
 class recipient(models.Model):
   id = models.ForeignKey(person) #models.IntegerField(null=False,default=val)

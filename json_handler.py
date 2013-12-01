@@ -1,7 +1,7 @@
 import MySQLdb
 from MySQLdb.constants import FIELD_TYPE
 
-import items
+import item
 import location_swaps
 import locations
 import users
@@ -29,7 +29,7 @@ class json_handler():
       #user page? show donations that have been matched and received and distributed, current status of all
       return users.fetch(db, path)
     elif 'insert_donation' in path:
-      dJSON = json.load(path[path.find('json='):]
+      dJSON = json.load(path[path.find('json='):])
       donation.insert_donation(db, dJSON)
       return ''
       #what other cases do we need to handle?

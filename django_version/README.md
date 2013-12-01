@@ -8,4 +8,6 @@ do a little refresher / learning experience with django. pushed what I've got so
 figure if somebody wants to work either direction they can. was being hesitant, but 
 dont want to hold anybody up for lack of progress on my end. 
 
+notes for deployment. not sure how the things I referenced previously were received. havent investigated fully.
+http://www.djangobook.com/en/2.0/chapter12.html
 
